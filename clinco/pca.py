@@ -15,7 +15,7 @@ from dateutil.parser import parse as date_parse
 
 from matplotlib import pyplot as plt
 
-from sklearn.decomposition import PCA, RandomizedPCA, ProbabilisticPCA, \
+from sklearn.decomposition import PCA, RandomizedPCA, \
         KernelPCA
 
 from sklearn.manifold import Isomap, LocallyLinearEmbedding
@@ -28,7 +28,6 @@ CLASSES = {
     "IsoMap": Isomap,
     "LLE": LocallyLinearEmbedding,
     "KPCA": KernelPCA,
-    "PPCA": ProbabilisticPCA,
 }
 
 def shannon(explained_variance_ratio):
